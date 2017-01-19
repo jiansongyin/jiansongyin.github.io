@@ -21,7 +21,7 @@ subtitle: "live your dream"
 # root of your server.
 # baseurl: "/" # the subpath of your site
 url: "http://MrchildNEO.github.io" # the base hostname & protocol for your site
-baseurl: "/MRchildNEO"
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
