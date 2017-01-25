@@ -1,26 +1,57 @@
 ---
 layout: post
-title: Welcome to jekyll!
-subtitle: Jekyll is a blog-aware, static site generator in Ruby https://jekyllrb.com
-date: 2016-05-20 21:11:27
+title: 2017年，会发生呢？
+subtitle: 2017年必定是各个领域变革的一年！
+date: 2017-01-06 21:11:27
 author: jekyll
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+！
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+火
+校园VC火种节
+1
+校园VC在2017年3月份将有10场火种节在全国各地举办，欢迎所有的小伙伴参与！
+我们将对火种节不断迭代，开放，创新，把最精彩的火种节呈现给大家。
+随意透露一下，火种节创业体验一定要在固定的空间里吗？
+我们将在大山里，原野上，庄园中，列车上，敬请期待！
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+合作报名详情请联系校园VC工作人员
+联系方式：wechat／mobile（18813183253）
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+预告：校园VC超级火种节将于2017年2月20号盛大启动。
+欢迎校园VC的小伙伴参加！
+透露一点：你将看到一场全新的校园VC火种节
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+疯
+校园 VC 社群
+2
+校园VC社群目前分布
+
+
+
+这里是聚集了一群生命不息、折腾不止的大学生创业者。
+
+校园VC疯子Live
+本周开通 殷建松老师的千聊直播频道；
+
+新书《从零到英雄》凝聚了殷建松十多年的创业经验和智慧，受到了李开复、俞洪敏、查立、邝子平、蒲东皖等31位圈内人士联袂举荐，该书从设计人生、设计创业、设计产品、实现产品、产品营销、团队领导以及投融资等七个方面。此频道请到殷老师本人授业解惑！
+
+
+
+---校园 VC 开启全球招募合伙人---
+报名请点击下方图片
+
+
+自
+自由人在路上
+3
+第二期自由人计划已经开始招募，欢迎团队报名参加。
+本周我们举行了，第一次自由人见面会。
+
+一个团队正在分享他们的项目，方向是移动办公Remote work。
+自由人计划为三个月深度加速孵化，为创业者提供全流程加速。
+报名招募截止时间：2017年2月12日
+报名联系方式：wechat／mobile（18813183253）
+
+
