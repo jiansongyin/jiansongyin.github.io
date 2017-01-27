@@ -3,6 +3,9 @@ layout: page
 title:校园VC
 permalink: /service/
 ---
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="src/brickwall.js"></script>
 
 <!-- Slider Start -->
 <section id="slider">
@@ -222,3 +225,33 @@ permalink: /service/
     </div>
   </div>
 </section>
+<ul>
+
+<li><a href="#" title="Title 1"><img src="1.jpg" focus-y="3" focus-x="3"></a></li>
+
+<li><a href="#" title="Title 2"><img src="2.jpg" focus-y="2" focus-x="1"></a></li>
+
+<li><a href="#" title="Title 3"><img src="3.jpg" focus-y="1" focus-x="2"></a></li>
+
+...
+
+</ul>
+<script type="text/javascript">
+
+$(function() {
+
+$('ul img').each(function(i, element) {
+
+var focusY = Math.floor((Math.random()*4)+1);
+
+var focusX = Math.floor((Math.random()*4)+1);
+
+$(element).attr({'focus-y': focusY, 'focus-x': focusX});
+
+});
+
+$('ul').brickwall();
+
+});
+
+</script>
