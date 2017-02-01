@@ -18,183 +18,431 @@ permalink: /work/
     </div>
 </section>
     <!-- Portfolio Start -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="https://github.com/MRchildNEO/mrchildneo/blob/master/normalize.css">
-        <link rel="stylesheet" href="https://github.com/MRchildNEO/mrchildneo/blob/master/font-awesome.css">
-        <link rel="stylesheet" href="https://github.com/MRchildNEO/mrchildneo/blob/master/bootstrap.min.css">
-        <link rel="stylesheet" href="https://github.com/MRchildNEO/mrchildneo/blob/master/templatemo-style.css">
-        <script src="https://github.com/MRchildNEO/mrchildneo/blob/master/modernizr-2.6.2.min.js"></script>
+<div class="iw_wrapper">
+	<ul class="iw_thumbs" id="iw_thumbs">
+		<li>
+			<img src="images/thumbs/1.jpg" data-img="images/full/1.jpg" alt="Thumb1"/>
+			<div>
+				<h2>Description Heading</h2>
+				<p>Some description text...</p>
+			</div>
+		</li>
+		<li>...</li>
+		...
+	</ul>
+</div>
+<div id="iw_ribbon" class="iw_ribbon">
+	<span class="iw_close"></span>
+	<span class="iw_zoom">Click thumb to zoom</span>
+</div>
+<style>
+    .iw_wrapper{
+	width:70%;
+	margin:30px auto 100px auto;
+	position:relative;
+}
+    ul.iw_thumbs li{
+	float:left;
+	margin:5px;
+}
+    ul.iw_thumbs li div{
+	position:absolute;
+	top:5px;
+	width:180px;
+	padding:0px 10px;
+	display:none;
+	color:#fff;
+	z-index:100;
+}
+    ul.iw_thumbs li div h2{
+	font-family: 'Wire One', arial, serif;
+	font-size:38px;
+	text-transform:uppercase;
+	text-shadow:0px 0px 1px #fff;
+}
+ul.iw_thumbs li div p{
+	font-size:11px;
+	line-height:16px;
+	font-style:italic;
+}
+    ul.iw_thumbs li img{
+	border:7px solid #fff;
+	cursor:pointer;
+	position:relative;
+	-moz-box-shadow:1px 1px 1px #aaa;
+	-webkit-box-shadow:1px 1px 1px #aaa;
+	box-shadow:1px 1px 1px #aaa;
+}
+ul.iw_thumbs li img:hover{
+	-moz-box-shadow:1px 1px 7px #777;
+	-webkit-box-shadow:1px 1px 7px #777;
+	box-shadow:1px 1px 7px #777;
+}
+    ul.iw_thumbs li:nth-child(1){
+	margin-left:50px;
+}
+    ul.iw_thumbs li:nth-child(even){
+	margin-top:30px;
+}
+    ul.iw_thumbs li:nth-child(3n){
+	margin-left:20px;
+}
+    ul.iw_thumbs li:nth-child(even) img{
+	height:20px;
+}
+ul.iw_thumbs li:nth-child(odd) img{
+	height:40px;
+}
+ul.iw_thumbs li:nth-child(5n) img{
+	height:70px;
+}
+ul.iw_thumbs li:nth-child(6n) img{
+	height:110px;
+}
+ul.iw_thumbs li:nth-child(7n) img{
+	height:20px;
+}
+    .iw_ribbon{
+	position:fixed;
+	height:126px;
+	width:0px;
+	left:0px;
+	top:0px; 
+	background:#000;
+	opacity:0.8;
+	z-index:10;
+	overflow:hidden;
+	display:none;
+}
+    .iw_close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:#f0f0f0 url(../images/close.gif) no-repeat center center;
+	width:18px;
+	height:18px;
+	display:none;
+	cursor:pointer;
+}
+.iw_zoom{
+	color:white;
+	font-size:8px;
+	font-family:Arial, sans-serif;
+	text-transform:uppercase;
+	padding:14px;
+	display:none;
+	float:right;
+	margin-right:30px;
+}
+.iw_ribbon img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	border:7px solid #fff;
+}
+    .iw_loading{
+	background: #fff url(../images/loader.gif) no-repeat center center;
+	width:28px;
+	height:28px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10000;
+	margin: -14px 0px 0px -14px;
+	opacity:0.8;
+}
 
-        <!-- MAIN POSTS -->
-        <div class="main-posts">
-            <div class="container">
-                <div class="row">
-                    <div class="blog-masonry masonry-true">
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="https://raw.githubusercontent.com/MRchildNEO/mrchildneo/master/img/照片1.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Title one goes here</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">25 Jan 2084</span>
-                                        <h4><a href="#">Title one goes here</a></h4>
-                                        <p>Cum sociis natoque penatibus et magnis dis parturient</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="https://raw.githubusercontent.com/MRchildNEO/mrchildneo/master/img/slide1.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Second Image Title</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">24 Jan 2084</span>
-                                        <h4><a href="#">Second Image Title</a></h4>
-                                        <p>Donec venenatis libero sapien, eu condimentum lacus</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="https://raw.githubusercontent.com/MRchildNEO/mrchildneo/master/img/照片23.png" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Image Number Three</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">23 Jan 2084</span>
-                                        <h4><a href="#">Image Number Three</a></h4>
-                                        <p>Sed vitae lacus eget ipsum scelerisque condimentum</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/4.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Aliquam sed magna risus</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">22 Jan 2084</span>
-                                        <h4><a href="#">Aliquam sed magna risus</a></h4>
-                                        <p>Praesent pharetra blandit ex sed imperdiet</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/5.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Lorem ipsum dolor sit</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">21 Jan 2084</span>
-                                        <h4><a href="#">Lorem ipsum dolor sit</a></h4>
-                                        <p>Vestibulum faucibus lacus ac risus efficitur</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/6.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Praesent eget lectus mauris</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">20 Jan 2084</span>
-                                        <h4><a href="#">Praesent eget lectus mauris</a></h4>
-                                        <p>Morbi placerat pellentesque tortor, sed auctor dolor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/7.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Donec nec metus non</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">15 Jan 2084</span>
-                                        <h4><a href="#">Donec nec metus non</a></h4>
-                                        <p>Phasellus eu sapien sagittis, sodales neque ac</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/8.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Vestibulum faucibus lacus</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">14 Jan 2084</span>
-                                        <h4><a href="#">Vestibulum faucibus lacus</a></h4>
-                                        <p>In aliquet et tellus in iaculis. Ut fermentum quis tellus</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/9.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Pellentesque habitant morbi</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="date">13 Jan 2084</span>
-                                        <h4><a href="#">Pellentesque habitant morbi</a></h4>
-                                        <p>Fusce ullamcorper diam vel arcu scelerisque</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.post-masonry -->
-                    </div>
-                </div>
-            </div>
-        </div>
+</style>
+<script>
+    var $iw_thumbs			= $('#iw_thumbs'),
+	$iw_ribbon			= $('#iw_ribbon'),
+	$iw_ribbon_close	= $iw_ribbon.children('span.iw_close'),
+	$iw_ribbon_zoom		= $iw_ribbon.children('span.iw_zoom');
 
-        <!-- FOOTER -->
-        
-        <script src="https://github.com/MRchildNEO/mrchildneo/blob/master/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="https://github.com/MRchildNEO/mrchildneo/blob/master/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="https://github.com/MRchildNEO/mrchildneo/blob/master/plugins.min.js"></script>
-        <script src="https://github.com/MRchildNEO/mrchildneo/blob/master/main.min.js"></script>
+	ImageWall	= (function() {
+	 ...
+	})();
 
-        <!-- Preloader -->
-        <script type="text/javascript">
-            //<![CDATA[
-            $(window).load(function() { // makes sure the whole site is loaded
-                $('#loader').fadeOut(); // will first fade out the loading animation
-                    $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-                $('body').delay(350).css({'overflow-y':'visible'});
-            })
-            //]]>
-        </script>
+ImageWall.init();
+        // window width and height
+var w_dim,
+	// index of current image
+	current				= -1,
+	isRibbonShown		= false,
+	isFullMode			= false,
+	// ribbon / images animation settings
+	ribbonAnim			= {speed : 500, easing : 'easeOutExpo'},
+	imgAnim				= {speed : 400, easing : 'jswing'},
+init				= function() {
+		$iw_thumbs.imagesLoaded(function(){
+			$iw_thumbs.masonry({
+				isAnimated	: true
+			});
+		});
+		getWindowsDim();
+		initEventsHandler();
+	},
+getWindowsDim		= function() {
+		w_dim = {
+			width	: $(window).width(),
+			height	: $(window).height()
+		};
+	},
+    initEventsHandler	= function() {
+
+		// click on a image
+		$iw_thumbs.delegate('li', 'click', function() {
+			if($iw_ribbon.is(':animated')) return false;
+
+			var $el = $(this);
+
+			if($el.data('ribbon')) {
+				showFullImage($el);
+			}
+			else if(!isRibbonShown) {
+				isRibbonShown = true;
+
+				$el.data('ribbon',true);
+
+				// set the current
+				current = $el.index();
+
+				showRibbon($el);
+			}
+		});
+
+		// click ribbon close
+		$iw_ribbon_close.bind('click', closeRibbon);
+
+		// on window resize we need to recalculate the window dimentions
+		$(window).bind('resize', function() {
+					getWindowsDim();
+					if($iw_ribbon.is(':animated'))
+						return false;
+					closeRibbon();
+				 })
+				 .bind('scroll', function() {
+					if($iw_ribbon.is(':animated'))
+						return false;
+					closeRibbon();
+				 });
+
+	},
+    showRibbon			= function($el) {
+		var	$img	= $el.children('img'),
+			$descrp	= $img.next();
+
+		// fadeOut all the other images
+		$iw_thumbs.children('li').not($el).animate({opacity : 0.2}, imgAnim.speed);
+
+		// increase the image z-index, and set the height to 100px (default height)
+		$img.css('z-index', 100)
+			.data('originalHeight',$img.height())
+			.stop()
+			.animate({
+				height 		: '100px'
+			}, imgAnim.speed, imgAnim.easing);
+
+		// the ribbon will animate from the left or right
+		// depending on the position of the image
+		var ribbonCssParam 		= {
+				top	: $el.offset().top - $(window).scrollTop() - 6 + 'px'
+			},
+			descriptionCssParam,
+			dir;
+
+		if( $el.offset().left < (w_dim.width / 2) ) {
+			dir = 'left';
+			ribbonCssParam.left 	= 0;
+			ribbonCssParam.right 	= 'auto';
+		}
+		else {
+			dir = 'right';
+			ribbonCssParam.right 	= 0;
+			ribbonCssParam.left 	= 'auto';
+		}
+
+		$iw_ribbon.css(ribbonCssParam)
+				  .show()
+				  .stop()
+				  .animate({width : '100%'}, ribbonAnim.speed, ribbonAnim.easing, function() {
+						switch(dir) {
+							case 'left' :
+								descriptionCssParam		= {
+									'left' 			: $img.outerWidth(true) + 'px',
+									'text-align' 	: 'left'
+								};
+								break;
+							case 'right' :	
+								descriptionCssParam		= {
+									'left' 			: '-200px',
+									'text-align' 	: 'right'
+								};
+								break;
+						};
+						$descrp.css(descriptionCssParam).fadeIn();
+						// show close button and zoom
+						$iw_ribbon_close.show();
+						$iw_ribbon_zoom.show();
+				  });
+
+	},
+    closeRibbon			= function() {
+		isRibbonShown 	= false
+
+		$iw_ribbon_close.hide();
+		$iw_ribbon_zoom.hide();
+
+		if(!isFullMode) {
+
+			// current wall image
+			var $el	 		= $iw_thumbs.children('li').eq(current);
+
+			resetWall($el);
+
+			// slide out ribbon
+			$iw_ribbon.stop()
+					  .animate({width : '0%'}, ribbonAnim.speed, ribbonAnim.easing); 
+
+		}
+		else {
+			$iw_ribbon.stop().animate({
+				opacity		: 0.8,
+				height 		: '0px',
+				marginTop	: w_dim.height/2 + 'px' // half of window height
+			}, ribbonAnim.speed, function() {
+				$iw_ribbon.css({
+					'width'		: '0%',
+					'height'	: '126px',
+					'margin-top': '0px'
+				}).children('img').remove();
+			});
+
+			isFullMode	= false;
+		}
+	},
+    resetWall			= function($el) {
+		var $img		= $el.children('img'),
+			$descrp		= $img.next();
+
+		$el.data('ribbon',false);
+
+		// reset the image z-index and height
+		$img.css('z-index',1).stop().animate({
+			height 		: $img.data('originalHeight')
+		}, imgAnim.speed,imgAnim.easing);
+
+		// fadeOut the description
+		$descrp.fadeOut();
+
+		// fadeIn all the other images
+		$iw_thumbs.children('li').not($el).animate({opacity : 1}, imgAnim.speed);								
+	},
+    showFullImage		= function($el) {
+		isFullMode	= true;
+
+		$iw_ribbon_close.hide();
+
+		var	$img	= $el.children('img'),
+			large	= $img.data('img'),
+
+			// add a loading span on top of the image
+			$loading = $(' ');
+
+		$el.append($loading);
+
+		// preload large image
+		$('').load(function() {
+			var $largeImage	= $(this);
+
+			$loading.remove();
+
+			$iw_ribbon_zoom.hide();
+
+			resizeImage($largeImage);
+
+			// reset the current image in the wall
+			resetWall($el);
+
+			// animate ribbon in and out
+			$iw_ribbon.stop().animate({
+				opacity		: 1,
+				height 		: '0px',
+				marginTop	: '63px' // half of ribbons height
+			}, ribbonAnim.speed, function() {
+				// add the large image to the DOM
+				$iw_ribbon.prepend($largeImage);
+
+				$iw_ribbon_close.show();
+
+				$iw_ribbon.animate({
+					height 		: '100%',
+					marginTop	: '0px',
+					top			: '0px'
+				}, ribbonAnim.speed);
+			});
+		}).attr('src',large);
+
+	},
+    resizeImage			= function($image) {
+		var widthMargin		= 100,
+			heightMargin 	= 100,
+
+			windowH      	= w_dim.height - heightMargin,
+			windowW      	= w_dim.width - widthMargin,
+			theImage     	= new Image();
+
+		theImage.src     	= $image.attr("src");
+
+		var imgwidth     	= theImage.width,
+			imgheight    	= theImage.height;
+
+		if((imgwidth > windowW) || (imgheight > windowH)) {
+			if(imgwidth > imgheight) {
+				var newwidth 	= windowW,
+					ratio 		= imgwidth / windowW,
+					newheight 	= imgheight / ratio;
+
+				theImage.height = newheight;
+				theImage.width	= newwidth;
+
+				if(newheight > windowH) {
+					var newnewheight 	= windowH,
+						newratio 		= newheight/windowH,
+						newnewwidth 	= newwidth/newratio;
+
+					theImage.width 		= newnewwidth;
+					theImage.height		= newnewheight;
+				}
+			}
+			else {
+				var newheight 	= windowH,
+					ratio 		= imgheight / windowH,
+					newwidth 	= imgwidth / ratio;
+
+				theImage.height = newheight;
+				theImage.width	= newwidth;
+
+				if(newwidth > windowW) {
+					var newnewwidth 	= windowW,
+						newratio 		= newwidth/windowW,
+						newnewheight 	= newheight/newratio;
+
+					theImage.height 	= newnewheight;
+					theImage.width		= newnewwidth;
+				}
+			}
+		}
+
+		$image.css({
+			'width'			: theImage.width + 'px',
+			'height'		: theImage.height + 'px',
+			'margin-left'	: -theImage.width / 2 + 'px',
+			'margin-top'	: -theImage.height / 2 + 'px'
+		});							
+	};
+
+return {init : init};
+
+</script>
 
