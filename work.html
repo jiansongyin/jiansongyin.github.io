@@ -17,7 +17,12 @@ permalink: /work/
     </div>
 </section>
     <!-- Portfolio Start -->
-
+<link rel='stylesheet' type='text/css' href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox-dark.css"> -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 <section id="gallery">
 
 	<div class="container-fluid">
@@ -69,38 +74,3 @@ permalink: /work/
     </div>
 
 </section>
-<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-        <script src="js/ekko-lightbox.min.js"></script>
-        <script src="js/jquery.singlePageNav.min.js"></script>
-        <script>
-
-            // Prevent console.log from generating errors in IE for the purposes of the demo
-            if ( ! window.console ) console = { log: function(){} };
-
-            // The actual plugin
-            $('.single-page-nav').singlePageNav({
-                offset: $('.single-page-nav').outerHeight(),
-                filter: ':not(.external)',
-                updateHash: true,
-                beforeStart: function() {
-                    console.log('begin scrolling');
-                },
-                onComplete: function() {
-                    console.log('done scrolling');
-                }
-            });
-			
-			$(document).ready(function ($) {
-
-				// delegate calls to data-toggle="lightbox"
-				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-					event.preventDefault();
-					return $(this).ekkoLightbox({
-						always_show_close: true
-					});
-				});
-
-			});
-			
-        </script>
